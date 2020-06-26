@@ -6,7 +6,7 @@ package me.ktakayama.design.patterns.creational.factory;
  */
 public class FactoryB extends Factory {
     @Override
-    String getFactoryType() {
-        return type = "B";
+    public Product createProduct() {
+        return new ProductB();
     }
 }

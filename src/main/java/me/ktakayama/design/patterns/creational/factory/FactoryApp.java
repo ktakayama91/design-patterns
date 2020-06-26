@@ -7,21 +7,24 @@ package me.ktakayama.design.patterns.creational.factory;
 public class FactoryApp
 {
     private static Factory factory;
+    private static Product product;
 
     public static void main( String[] args )
     {
         factory = getFactory("A");
-
         if (factory != null) {
-            factory.getFactoryMessage();
-            System.out.println(factory.getFactoryType());
+            factory.getMessage();
+            product = factory.createProduct();
+            System.out.println(product.getProductName());
+            System.out.println(product.getProductType());
         }
 
         factory = getFactory("B");
-
         if (factory != null) {
-            factory.getFactoryMessage();
-            System.out.println(factory.getFactoryType());
+            factory.getMessage();
+            product = factory.createProduct();
+            System.out.println(product.getProductName());
+            System.out.println(product.getProductType());
         }
 
     }

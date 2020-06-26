@@ -1,13 +1,4 @@
-.gradle
-/build/
-/gradle/wrapper/gradle-wrapper.jar
-*.class
-.gradlew
-gradlew
-gradlew.bat
-/bin/
-/**/build
-/**/bin
+target
 
 ### STS ###
 .apt_generated
