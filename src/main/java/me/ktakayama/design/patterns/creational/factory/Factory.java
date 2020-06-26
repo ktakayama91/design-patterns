@@ -6,11 +6,11 @@ package me.ktakayama.design.patterns.creational.factory;
  */
 abstract class Factory {
 
-    protected String letter;
+    protected String type;
 
-    abstract String getLetter();
+    abstract String getFactoryType();
 
-    public void test() {
-        System.out.println("This is an abstract class named Factory");
+    public void getFactoryMessage() {
+        System.out.println("This is method comes from an abstract class named Factory");
     }
 }

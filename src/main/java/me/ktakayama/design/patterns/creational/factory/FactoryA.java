@@ -6,7 +6,7 @@ package me.ktakayama.design.patterns.creational.factory;
  */
 public class FactoryA extends Factory{
     @Override
-    String getLetter() {
-        return letter = "A";
+    String getFactoryType() {
+        return type = "A";
     }
 }
